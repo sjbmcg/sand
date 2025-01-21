@@ -1,4 +1,4 @@
-```markdown
+
 # Sand Dune Migration Analysis - Maspalomas
 
 ## Data Structure
@@ -18,7 +18,7 @@ The data folder contains:
 
 ## Installation
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
@@ -26,7 +26,6 @@ pip install -r requirements.txt
 
 Run `sand_dune_simulation.ipynb` sequentially. Werner simulation requires initial conditions from `data/maspalomas_simulation_config/`. To run the simulation, open PowerShell or Command Prompt and execute:
 
-```batch
-python brad_werner_sand_simulation.py
 ```
+python brad_werner_sand_simulation.py
 ```
