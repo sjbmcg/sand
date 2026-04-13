@@ -12,7 +12,8 @@ The data folder contains:
 
 ## Code
 
-**sand_dune_simulation.ipynb** - Complete analysis notebook  
+**sand_dune_simulation_p1.ipynb** - Part 1 notebook covering site context, terrain structure, and climate forcing  
+**sand_dune_simulation_p2.ipynb** - Part 2 notebook covering image-based measurement, synthesis, and the simulation bridge  
 **brad_werner_sand_simulation.py** - Werner-style cellular automaton implementation with configurable CLI options  
 **analysis_config.json** - Central configuration for weather inputs, DEM paths, and simulation artifacts  
 **requirements.txt** - Minimal runtime dependencies
@@ -27,7 +28,9 @@ For the notebook, authenticate Google Earth Engine in your environment first. If
 
 ## Execution
 
-Run `sand_dune_simulation.ipynb` sequentially. The notebook includes data download, quality checks, contextual figures, clustering-based movement estimates, phase-correlation diagnostics, and initial-condition generation for the Werner simulation.
+Run `sand_dune_simulation_p1.ipynb` for the context, terrain, and climate sections, then `sand_dune_simulation_p2.ipynb` for the image workflow, cross-method comparison, and initial-condition generation for the Werner simulation.
+
+Part 2 repeats the shared imports, Earth Engine setup, and wind-preparation steps so it can still be opened and rerun independently after environment setup.
 
 The simulation script uses meteorological wind bearings, so `45` means wind blowing from the northeast toward the southwest. A reproducible non-interactive example is:
 
